@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   :root {
     --black: #0f0f0f;
     --white: #f7f6f2;
@@ -17,9 +17,9 @@
     --gray-light: #e8e7e3;
     --card-bg: #1a1a1a;
   }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     background: var(--black);
     color: var(--white);
@@ -28,7 +28,7 @@
     line-height: 1.6;
     overflow-x: hidden;
   }
-
+ 
   /* NAV */
   nav {
     position: fixed;
@@ -42,7 +42,7 @@
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255,255,255,0.06);
   }
-
+ 
   .logo {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
@@ -51,16 +51,16 @@
     color: var(--white);
     text-decoration: none;
   }
-
+ 
   .logo span { color: var(--green); }
-
+ 
   nav ul {
     list-style: none;
     display: flex;
     gap: 2rem;
     align-items: center;
   }
-
+ 
   nav ul a {
     color: rgba(247,246,242,0.6);
     text-decoration: none;
@@ -68,9 +68,9 @@
     font-weight: 400;
     transition: color 0.2s;
   }
-
+ 
   nav ul a:hover { color: var(--white); }
-
+ 
   .nav-cta {
     background: var(--green) !important;
     color: var(--black) !important;
@@ -79,9 +79,9 @@
     font-weight: 500 !important;
     transition: background 0.2s !important;
   }
-
+ 
   .nav-cta:hover { background: var(--green-dark) !important; }
-
+ 
   /* HERO */
   .hero {
     min-height: 100vh;
@@ -92,7 +92,7 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .hero::before {
     content: '';
     position: absolute;
@@ -101,7 +101,7 @@
     background: radial-gradient(circle, rgba(184,240,74,0.12) 0%, transparent 70%);
     pointer-events: none;
   }
-
+ 
   .hero-eyebrow {
     font-size: 0.8rem;
     font-weight: 500;
@@ -113,7 +113,7 @@
     align-items: center;
     gap: 0.75rem;
   }
-
+ 
   .hero-eyebrow::before {
     content: '';
     display: block;
@@ -121,7 +121,7 @@
     height: 1px;
     background: var(--green);
   }
-
+ 
   .hero h1 {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
@@ -131,12 +131,12 @@
     margin-bottom: 2rem;
     max-width: 14ch;
   }
-
+ 
   .hero h1 em {
     font-style: normal;
     color: var(--green);
   }
-
+ 
   .hero-sub {
     font-size: clamp(1rem, 2vw, 1.2rem);
     color: rgba(247,246,242,0.55);
@@ -144,14 +144,14 @@
     margin-bottom: 3rem;
     line-height: 1.7;
   }
-
+ 
   .hero-actions {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     align-items: center;
   }
-
+ 
   .btn-primary {
     background: var(--green);
     color: var(--black);
@@ -166,12 +166,12 @@
     border: none;
     font-family: 'DM Sans', sans-serif;
   }
-
+ 
   .btn-primary:hover {
     background: var(--green-dark);
     transform: translateY(-1px);
   }
-
+ 
   .btn-secondary {
     color: rgba(247,246,242,0.6);
     padding: 0.9rem 2rem;
@@ -183,12 +183,12 @@
     transition: border-color 0.2s, color 0.2s;
     display: inline-block;
   }
-
+ 
   .btn-secondary:hover {
     border-color: rgba(255,255,255,0.3);
     color: var(--white);
   }
-
+ 
   .hero-stats {
     display: flex;
     gap: 3rem;
@@ -197,20 +197,20 @@
     border-top: 1px solid rgba(255,255,255,0.08);
     flex-wrap: wrap;
   }
-
+ 
   .stat-num {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
     font-size: 2rem;
     color: var(--white);
   }
-
+ 
   .stat-label {
     font-size: 0.85rem;
     color: var(--gray);
     margin-top: 0.15rem;
   }
-
+ 
   /* MARQUEE */
   .marquee-wrap {
     overflow: hidden;
@@ -219,14 +219,14 @@
     padding: 1rem 0;
     background: rgba(255,255,255,0.02);
   }
-
+ 
   .marquee-track {
     display: flex;
     gap: 3rem;
     animation: marquee 20s linear infinite;
     white-space: nowrap;
   }
-
+ 
   .marquee-track span {
     font-size: 0.8rem;
     letter-spacing: 0.1em;
@@ -234,20 +234,20 @@
     color: rgba(247,246,242,0.25);
     flex-shrink: 0;
   }
-
+ 
   .marquee-track span.dot {
     color: var(--green);
     font-size: 1rem;
   }
-
+ 
   @keyframes marquee {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
   }
-
+ 
   /* SECTIONS */
   section { padding: 6rem 5%; }
-
+ 
   .section-label {
     font-size: 0.75rem;
     font-weight: 500;
@@ -256,7 +256,7 @@
     color: var(--green);
     margin-bottom: 1rem;
   }
-
+ 
   .section-title {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
@@ -265,17 +265,17 @@
     line-height: 1.1;
     margin-bottom: 1.5rem;
   }
-
+ 
   .section-body {
     color: rgba(247,246,242,0.55);
     max-width: 48ch;
     font-size: 1.05rem;
     line-height: 1.7;
   }
-
+ 
   /* SERVICES */
   .services { background: #111; }
-
+ 
   .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -283,15 +283,15 @@
     margin-top: 4rem;
     border: 1px solid rgba(255,255,255,0.06);
   }
-
+ 
   .service-card {
     background: var(--card-bg);
     padding: 2.5rem;
     transition: background 0.2s;
   }
-
+ 
   .service-card:hover { background: #222; }
-
+ 
   .service-icon {
     width: 44px;
     height: 44px;
@@ -303,7 +303,7 @@
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
   }
-
+ 
   .service-card h3 {
     font-family: 'Syne', sans-serif;
     font-weight: 600;
@@ -311,20 +311,20 @@
     margin-bottom: 0.75rem;
     letter-spacing: -0.01em;
   }
-
+ 
   .service-card p {
     font-size: 0.9rem;
     color: rgba(247,246,242,0.5);
     line-height: 1.6;
   }
-
+ 
   /* PROCESS */
   .process-list {
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
   }
-
+ 
   .process-item {
     display: grid;
     grid-template-columns: 80px 1fr;
@@ -333,9 +333,9 @@
     border-bottom: 1px solid rgba(255,255,255,0.06);
     align-items: start;
   }
-
+ 
   .process-item:first-child { border-top: 1px solid rgba(255,255,255,0.06); }
-
+ 
   .process-num {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
@@ -344,7 +344,7 @@
     line-height: 1;
     padding-top: 0.2rem;
   }
-
+ 
   .process-content h3 {
     font-family: 'Syne', sans-serif;
     font-weight: 600;
@@ -352,24 +352,24 @@
     margin-bottom: 0.5rem;
     letter-spacing: -0.01em;
   }
-
+ 
   .process-content p {
     color: rgba(247,246,242,0.5);
     font-size: 0.95rem;
     line-height: 1.6;
     max-width: 52ch;
   }
-
+ 
   /* PRICING */
   .pricing { background: #111; }
-
+ 
   .pricing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
     margin-top: 4rem;
   }
-
+ 
   .pricing-card {
     background: var(--card-bg);
     border: 1px solid rgba(255,255,255,0.06);
@@ -378,14 +378,14 @@
     position: relative;
     transition: border-color 0.2s;
   }
-
+ 
   .pricing-card:hover { border-color: rgba(184,240,74,0.3); }
-
+ 
   .pricing-card.featured {
     border-color: var(--green);
     background: #1d1d1d;
   }
-
+ 
   .featured-badge {
     position: absolute;
     top: -12px;
@@ -401,7 +401,7 @@
     border-radius: 100px;
     white-space: nowrap;
   }
-
+ 
   .pricing-tier {
     font-size: 0.8rem;
     font-weight: 500;
@@ -410,7 +410,7 @@
     color: var(--gray);
     margin-bottom: 1rem;
   }
-
+ 
   .pricing-price {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
@@ -419,20 +419,20 @@
     line-height: 1;
     margin-bottom: 0.5rem;
   }
-
+ 
   .pricing-price span {
     font-size: 1.2rem;
     font-weight: 400;
     color: var(--gray);
   }
-
+ 
   .pricing-desc {
     font-size: 0.9rem;
     color: rgba(247,246,242,0.5);
     margin-bottom: 2rem;
     line-height: 1.5;
   }
-
+ 
   .pricing-features {
     list-style: none;
     display: flex;
@@ -440,7 +440,7 @@
     gap: 0.75rem;
     margin-bottom: 2rem;
   }
-
+ 
   .pricing-features li {
     font-size: 0.9rem;
     color: rgba(247,246,242,0.7);
@@ -448,14 +448,14 @@
     align-items: center;
     gap: 0.6rem;
   }
-
+ 
   .pricing-features li::before {
     content: '✓';
     color: var(--green);
     font-weight: 600;
     flex-shrink: 0;
   }
-
+ 
   .btn-card {
     display: block;
     text-align: center;
@@ -472,20 +472,36 @@
     width: 100%;
     font-family: 'DM Sans', sans-serif;
   }
-
+ 
   .btn-card:hover {
     border-color: var(--green);
     color: var(--green);
   }
-
+ 
   .pricing-card.featured .btn-card {
     background: var(--green);
     color: var(--black);
     border-color: var(--green);
   }
-
+ 
   .pricing-card.featured .btn-card:hover { background: var(--green-dark); }
-
+ 
+  .addon-note {
+    font-size: 0.78rem;
+    color: rgba(247,246,242,0.4);
+    text-align: center;
+    margin-top: 0.85rem;
+    line-height: 1.5;
+  }
+ 
+  .addon-note a {
+    color: var(--green);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(184,240,74,0.3);
+  }
+ 
+  .addon-note a:hover { border-color: var(--green); }
+ 
   /* MONTHLY PLANS */
   .monthly-plans {
     margin-top: 2rem;
@@ -493,7 +509,7 @@
     flex-direction: column;
     gap: 1rem;
   }
-
+ 
   .monthly-card {
     padding: 1.5rem 2rem;
     background: rgba(184,240,74,0.04);
@@ -506,25 +522,25 @@
     gap: 1rem;
     transition: border-color 0.2s;
   }
-
+ 
   .monthly-card:hover { border-color: rgba(184,240,74,0.3); }
-
+ 
   .monthly-info { display: flex; align-items: center; gap: 1rem; }
-
+ 
   .monthly-icon { font-size: 1.3rem; }
-
+ 
   .monthly-name {
     font-weight: 500;
     font-size: 0.95rem;
     margin-bottom: 0.2rem;
   }
-
+ 
   .monthly-desc {
     font-size: 0.82rem;
     color: rgba(247,246,242,0.45);
     max-width: 40ch;
   }
-
+ 
   .monthly-price {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
@@ -532,20 +548,20 @@
     color: var(--green);
     white-space: nowrap;
   }
-
+ 
   .monthly-price span {
     font-family: 'DM Sans', sans-serif;
     font-weight: 300;
     font-size: 0.8rem;
     color: var(--gray);
   }
-
+ 
   /* DOMAIN PLAN — hidden, subtle, at bottom */
   .domain-plan-hint {
     margin-top: 1.5rem;
     text-align: center;
   }
-
+ 
   .domain-plan-hint a {
     font-size: 0.8rem;
     color: rgba(247,246,242,0.25);
@@ -554,25 +570,25 @@
     border-bottom: 1px solid rgba(255,255,255,0.08);
     padding-bottom: 1px;
   }
-
+ 
   .domain-plan-hint a:hover { color: rgba(247,246,242,0.5); }
-
+ 
   /* CTA */
   .cta-section {
     text-align: center;
     padding: 8rem 5%;
   }
-
+ 
   .cta-section .section-title {
     font-size: clamp(2.5rem, 5vw, 4rem);
     margin-bottom: 1.5rem;
   }
-
+ 
   .cta-section .section-body {
     margin: 0 auto 2.5rem;
     text-align: center;
   }
-
+ 
   .cta-email {
     display: inline-flex;
     align-items: center;
@@ -584,9 +600,9 @@
     opacity: 0.7;
     transition: opacity 0.2s;
   }
-
+ 
   .cta-email:hover { opacity: 1; }
-
+ 
   /* FOOTER */
   footer {
     border-top: 1px solid rgba(255,255,255,0.06);
@@ -597,18 +613,18 @@
     flex-wrap: wrap;
     gap: 1rem;
   }
-
+ 
   footer p { font-size: 0.85rem; color: var(--gray); }
-
+ 
   footer a {
     color: var(--gray);
     text-decoration: none;
     font-size: 0.85rem;
     transition: color 0.2s;
   }
-
+ 
   footer a:hover { color: var(--white); }
-
+ 
   /* MOBILE */
   @media (max-width: 640px) {
     nav ul { display: none; }
@@ -621,7 +637,7 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav>
   <a href="#" class="logo">Little <span>Big</span> Sites</a>
@@ -632,7 +648,7 @@
     <li><a href="#contact" class="nav-cta">Get Started</a></li>
   </ul>
 </nav>
-
+ 
 <!-- HERO -->
 <section class="hero">
   <p class="hero-eyebrow">Web Design for Small Business</p>
@@ -648,8 +664,8 @@
       <div class="stat-label">Starting price</div>
     </div>
     <div>
-      <div class="stat-num">7 days</div>
-      <div class="stat-label">Average delivery</div>
+      <div class="stat-num">Quick</div>
+      <div class="stat-label">Turnaround</div>
     </div>
     <div>
       <div class="stat-num">100%</div>
@@ -657,7 +673,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- MARQUEE -->
 <div class="marquee-wrap">
   <div class="marquee-track">
@@ -679,13 +695,13 @@
     <span>Mobile Friendly</span><span class="dot">·</span>
   </div>
 </div>
-
+ 
 <!-- SERVICES -->
 <section class="services" id="services">
   <p class="section-label">What You Get</p>
   <h2 class="section-title">Everything your business needs online</h2>
   <p class="section-body">No confusing tech. No hidden fees. Just a clean, professional website that works — and makes your business look the part.</p>
-
+ 
   <div class="services-grid">
     <div class="service-card">
       <div class="service-icon">🎨</div>
@@ -719,13 +735,13 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- PROCESS -->
 <section id="process">
   <p class="section-label">How It Works</p>
-  <h2 class="section-title">Up and running in days, not months</h2>
+  <h2 class="section-title">Up and running quickly, hassle-free</h2>
   <p class="section-body">The whole process is simple. You tell us what you need — we handle everything else.</p>
-
+ 
   <div class="process-list">
     <div class="process-item">
       <div class="process-num">1</div>
@@ -745,7 +761,7 @@
       <div class="process-num">3</div>
       <div class="process-content">
         <h3>You approve it</h3>
-        <p>Review your site and tell us what you'd like tweaked. We make revisions until it's exactly right. You don't pay in full until you're happy.</p>
+        <p>Review your site and tell us what you'd like tweaked. We make revisions until it's exactly right.</p>
       </div>
     </div>
     <div class="process-item">
@@ -757,32 +773,32 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- PRICING -->
 <section class="pricing" id="pricing">
   <p class="section-label">Pricing</p>
   <h2 class="section-title">Straightforward pricing, no surprises</h2>
-  <p class="section-body">Every project starts with a 50% deposit. The rest is due when you approve the final site.</p>
-
+  <p class="section-body">Simple, single payment per project — no deposits, no installments.</p>
+ 
   <div class="pricing-grid">
     <div class="pricing-card">
       <p class="pricing-tier">Launch</p>
-      <div class="pricing-price">$999</div>
+      <div class="pricing-price">$1,000</div>
       <p class="pricing-desc">Professional single-page website designed specifically for your business. Everything you need to get found and look the part.</p>
       <ul class="pricing-features">
         <li>Single page landing site</li>
         <li>Mobile friendly design</li>
         <li>Contact form included</li>
         <li>Domain connection</li>
-        <li>Delivered in 3–5 days</li>
+        <li>Quick turnaround</li>
       </ul>
-      <!-- STRIPE BUTTON: replace href with your one-time Stripe payment link -->
-      <a href="mailto:littlebigsites@gmail.com?subject=Launch Package" class="btn-card">Get Started</a>
+      <a href="https://buy.stripe.com/14A8wJ6CKaz3eiM0G54Ni03" class="btn-card">Get Started</a>
+      <p class="addon-note">Want ongoing help? Add <a href="https://buy.stripe.com/4gM8wJaT00Yt5MgdsR4Ni00">Maintenance</a> or <a href="https://buy.stripe.com/4gM5kx3qyfTn2A4ewV4Ni04">Domain Care</a> at checkout.</p>
     </div>
     <div class="pricing-card featured">
       <div class="featured-badge">Most Popular</div>
       <p class="pricing-tier">Business</p>
-      <div class="pricing-price">$1,499</div>
+      <div class="pricing-price">$1,500</div>
       <p class="pricing-desc">A full multi-page website that covers everything your customers need to know.</p>
       <ul class="pricing-features">
         <li>Up to 5 pages</li>
@@ -790,27 +806,27 @@
         <li>Photo gallery</li>
         <li>Contact & booking forms</li>
         <li>Google Maps integration</li>
-        <li>Delivered in 5–7 days</li>
+        <li>Quick turnaround</li>
       </ul>
-      <!-- STRIPE BUTTON: replace href with your one-time Stripe payment link -->
-      <a href="mailto:littlebigsites@gmail.com?subject=Business Package" class="btn-card">Get Started</a>
+      <a href="https://buy.stripe.com/8x2aER7GO0Yt3E888x4Ni02" class="btn-card">Get Started</a>
+      <p class="addon-note">Want ongoing help? Add <a href="https://buy.stripe.com/4gM8wJaT00Yt5MgdsR4Ni00">Maintenance</a> or <a href="https://buy.stripe.com/4gM5kx3qyfTn2A4ewV4Ni04">Domain Care</a> at checkout.</p>
     </div>
     <div class="pricing-card">
       <p class="pricing-tier">Store</p>
-      <div class="pricing-price">$2,499</div>
+      <div class="pricing-price">$3,000</div>
       <p class="pricing-desc">A complete online store so customers can browse and buy from you directly.</p>
       <ul class="pricing-features">
         <li>Everything in Business</li>
         <li>Product listings & cart</li>
         <li>Stripe payment setup</li>
         <li>Order management</li>
-        <li>Delivered in 7–10 days</li>
+        <li>Quick turnaround</li>
       </ul>
-      <!-- STRIPE BUTTON: replace href with your one-time Stripe payment link -->
-      <a href="mailto:littlebigsites@gmail.com?subject=Store Package" class="btn-card">Get Started</a>
+      <a href="https://buy.stripe.com/bJebIVe5c8qV3E82Od4Ni01" class="btn-card">Get Started</a>
+      <p class="addon-note">Want ongoing help? Add <a href="https://buy.stripe.com/4gM8wJaT00Yt5MgdsR4Ni00">Maintenance</a> or <a href="https://buy.stripe.com/4gM5kx3qyfTn2A4ewV4Ni04">Domain Care</a> at checkout.</p>
     </div>
   </div>
-
+ 
   <!-- MONTHLY PLANS -->
   <div class="monthly-plans">
     <div class="monthly-card">
@@ -822,19 +838,18 @@
         </div>
       </div>
       <div>
-        <div class="monthly-price">$75<span>/mo</span></div>
-        <!-- STRIPE BUTTON: replace href with your $75/mo subscription Stripe link -->
-        <a href="mailto:littlebigsites@gmail.com?subject=Maintenance Plan" class="btn-card" style="margin-top:0.75rem; padding: 0.6rem 1.25rem; font-size:0.82rem;">Subscribe</a>
+        <div class="monthly-price">$100<span>/mo</span></div>
+        <a href="https://buy.stripe.com/4gM8wJaT00Yt5MgdsR4Ni00" class="btn-card" style="margin-top:0.75rem; padding: 0.6rem 1.25rem; font-size:0.82rem;">Subscribe</a>
       </div>
     </div>
   </div>
-
+ 
   <!-- DOMAIN PLAN: subtle, hidden, for clients who ask -->
   <div class="domain-plan-hint">
-    <a href="mailto:littlebigsites@gmail.com?subject=Domain Care Plan">Need us to manage your domain? Ask about our Domain Care plan.</a>
+    <a href="https://buy.stripe.com/4gM5kx3qyfTn2A4ewV4Ni04">Need us to manage your domain? Check out our Domain Care plan.</a>
   </div>
 </section>
-
+ 
 <!-- CTA -->
 <section class="cta-section" id="contact">
   <p class="section-label">Get In Touch</p>
@@ -844,12 +859,13 @@
   <br>
   <a href="mailto:littlebigsites@gmail.com" class="cta-email">littlebigsites@gmail.com</a>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <p>© 2026 Little Big Sites. All rights reserved.</p>
   <a href="mailto:littlebigsites@gmail.com">littlebigsites@gmail.com</a>
 </footer>
-
+ 
 </body>
 </html>
+ 
